@@ -1,2 +1,2 @@
 # karantin
-domazi iz karantina
+domaci iz karantina
