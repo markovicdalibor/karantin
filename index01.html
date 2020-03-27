@@ -12,33 +12,8 @@
        let datum= new Date();
        let dan = datum.getDay();
        let para = document.getElementsByTagName('p');
-       switch (dan) {
-           case 0:
-                 para[0].innerHTML+='Nedjelja'
-
-               break;
-            case 1:
-                 para[0].innerHTML+='Ponedeljak'                                                                                   
-               break;
-            case 2:
-                 para[0].innerHTML+='Utorak'                                                                      
-               break;
-            case 3:
-                 para[0].innerHTML+='Sreda'                                                                      
-               break;
-            case 4:
-
-                 para[0].innerHTML+='Cetvrtak'                                                                      
-               break;
-            case 5:
-                 para[0].innerHTML+='Petak'                                                                      
-               break;
-            case 6:
-                 para[0].innerHTML+='Subota'                                                                      
-               break;
-           default:
-               break;
-       }
+       let nedelja = ['Nedelja','Ponedeljak','Utorak','Sreda','Cetvrtak','Petak','Sebota'];
+       para[0].innerHTML+=nedelja[dan];
        function sat() {
            let vreme = new Date();
            let h = vreme.getHours();
